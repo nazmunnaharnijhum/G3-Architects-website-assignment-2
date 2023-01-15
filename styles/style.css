@@ -149,7 +149,16 @@ section{
     display: flex;
     flex-direction: column;
 }
-
+.line{
+    width: 5px;
+height: 106px;
+border: 2px solid #FF900E;
+background: #FF900E;
+}
+.line-position{
+    display: flex;
+    gap: 21px;
+}
 .experience-title{
     border-left: #FF900E;
     width: 468px;
@@ -214,4 +223,164 @@ font-size: 25px;
 color: #FFFFFF;
 width: 258px;
 height: 109px;
+}
+
+/* style of some facts */
+.facts{
+    margin-left: 140px;
+}
+.box{
+    width: 241.83px;
+height: 241.83px;
+border: 1px solid #FF900E;
+border-radius: 8px;
+text-align: center;
+padding-top: 45px;
+}
+.facts-title{
+font-weight: 700;
+font-size: 45px;
+color: #131313;
+
+}
+.facts-details{
+    width: 542px;
+height: 52px;
+font-weight: 400;
+font-size: 16px;
+color: #727272;
+margin-top: 24px;
+margin-bottom: 100px;
+}
+.box-container{
+    display: flex;
+    gap: 96px;
+    margin-left: 20px;
+}
+.box:hover{
+    transform: rotate(90deg);
+}
+.icons{
+    width: 45.22px;
+height: 45.22px;
+}
+.digit{
+font-weight: 600;
+font-size: 45px;
+color: #424242;
+}
+.text{
+    font-weight: 600;
+font-size: 20px;
+color: #727272;
+}
+
+/* styles of extra section */
+
+.examples-container{
+    display: flex;
+    gap: 73px;
+    margin-top: 85px;
+    margin-left: 150px;
+    
+}
+.example-images{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.example-title{
+    width: 468px;
+height: 106px;
+font-weight: 500;
+font-size: 45px;
+margin-top: 287px;
+
+}
+.example-description{
+    width: 537px;
+height: 78px;
+font-weight: 400;
+font-size: 16px;
+color: #727272;
+margin-top: 24px;
+margin-bottom: 32px;
+}
+section{
+    margin-bottom: 130px;
+}
+
+/* Our Sponspors */
+.sponsors{
+    text-align: center;
+}
+.sponsor-title{
+    font-weight: 700;
+font-size: 45px;
+color: #131313;
+}
+.sponsor-detail{
+    font-weight: 400;
+font-size: 16px;
+color: #727272;
+text-align: center;
+margin-top: 24px;
+margin-bottom: 50px;
+}
+.img{
+    filter: grayscale(100%);
+}
+.sponsor-img{
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+/* styles of footer */
+footer{
+    width: 1440px;
+height: 100px;
+background: #FFF4E7;
+border-radius: 8px;
+margin-left: 45px;
+text-align: center;
+}
+.footer{
+    width: 620px;
+height: 23px;
+font-weight: 400;
+font-size: 20px;
+color: #424242;
+padding-top: 39px;
+padding-left: 410px;
+}
+
+/* media queries */
+
+/* for mobile devices */
+
+@media only screen and (max-width:688px){
+nav, nav ul, .features-container, .box-container, .examples-container, .sponsor-img, .experience, .experience-text, .box-items{
+    flex-direction: column;
+    gap: 5px;
+}
+.banner-container, .banner, .banner-title, .banner-description, .banner-img, .features-container{
+    width: 100%;
+}
+.banner-elements{
+    margin: 0;
+}
+.banner img{
+margin: 0px;
+}
+
+.images{
+    grid-template-columns: repeat(1, 1fr);
+}
+.features-container{
+    margin-left: 0px;
+}
+
 }
